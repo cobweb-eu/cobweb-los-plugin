@@ -4,6 +4,8 @@
     id="ie.ucd.cobweb.cordova.losplugin"
     version="0.0.1">
     <name>COBWEB Sensor Plugin</name>
+	
+	<repo>https://github.com/cobweb-eu/cobweb-los-plugin</repo>
 
     <!-- android -->
     <platform name="android">

@@ -28,7 +28,7 @@ public class COBWEBSensorPlugin extends CordovaPlugin implements
 	final private static String OSVER = "OS Version";
 	final private static char SP = ' ';
 
-	// Compass meta data
+	// Compass parameters
 	private static final String AZIMUTH = "Azimuth";
 	private static final String PITCH = "Pitch";
 	private static final String ROLL = "Roll";
