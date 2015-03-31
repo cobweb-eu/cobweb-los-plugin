@@ -6,6 +6,7 @@
     <name>COBWEB Sensor Plugin</name>
 	
 	<repo>https://github.com/cobweb-eu/cobweb-los-plugin</repo>
+	<issue>https://github.com/cobweb-eu/cobweb-los-plugin/issues</issue>
 
     <!-- android -->
     <platform name="android">
