@@ -55,9 +55,16 @@ public class COBWEBSensorPlugin extends CordovaPlugin implements
 			if (orient == null)
 				return false;
 			JSONObject compass = new JSONObject();
-			compass.put(AZIMUTH, orient[0]);
-			compass.put(PITCH, orient[1]);
-			compass.put(ROLL, orient[2]);
+			
+			// Convert radians to degrees
+			double degO[]=new double[3];
+			degO[0]=Math.toDegrees(orient[0]);
+			degO[1]=Math.toDegrees(orient[1]);
+			degO[2]=Math.toDegrees(orient[2]);
+			
+			compass.put(AZIMUTH, degO[0]);
+			compass.put(PITCH, degO[1]);
+			compass.put(ROLL, degO[2]);
 			callbackContext.success(compass);
 			return true;
 
@@ -91,7 +98,7 @@ public class COBWEBSensorPlugin extends CordovaPlugin implements
 			if (accel != null) {
 				float[] rMat = new float[NMAT];
 				if (SensorManager.getRotationMatrix(rMat, null, accel, magF)) {
-					orient = new float[3];
+					orient = new float[3];		
 					SensorManager.getOrientation(rMat, orient);
 				}
 			}
