@@ -1,9 +1,9 @@
 var exec = require('cordova/exec');
 
-exports.lineOfSight = function("", success, error) {
-    exec(success, error, "COBWEBSensorPlugin", "lineOfSight", [""]);
+exports.lineOfSight = function(intentString, success, error) {
+    exec(success, error, "COBWEBSensorPlugin", "lineOfSight", [intentString]);
 };
 
-exports.deviceInfo = function("", success, error) {
-    exec(success, error, "COBWEBSensorPlugin", "deviceInfo", [""]);
+exports.deviceInfo = function(intentString, success, error) {
+    exec(success, error, "COBWEBSensorPlugin", "deviceInfo", [intentString]);
 };
