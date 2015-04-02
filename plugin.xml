@@ -4,16 +4,19 @@
     id="ie.ucd.cobweb.cordova.losplugin"
     version="0.0.1">
     <name>COBWEB Sensor Plugin</name>
-	
-	<repo>https://github.com/cobweb-eu/cobweb-los-plugin</repo>
-	<issue>https://github.com/cobweb-eu/cobweb-los-plugin/issues</issue>
+
+    <repo>https://github.com/cobweb-eu/cobweb-los-plugin</repo>
+    <issue>https://github.com/cobweb-eu/cobweb-los-plugin/issues</issue>
+    <js-module src="www/COBWEBSensorPlugin.js" name="CoolPlugin">
+        <clobbers target="COBWEBSensorPlugin" />
+    </js-module>
 
     <!-- android -->
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="COBWEBSensorPlugin" >
                 <param name="android-package" value="ie.ucd.cobweb.cordova.COBWEBSensorPlugin"/>
-				<param name="onload" value="true" />
+                <param name="onload" value="true" />
             </feature>
         </config-file>
         <source-file src="src/android/COBWEBSensorPlugin.java" target-dir="src/ie/ucd/cobweb/cordova" />
