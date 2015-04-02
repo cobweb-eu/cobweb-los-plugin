@@ -7,7 +7,7 @@
 
     <repo>https://github.com/cobweb-eu/cobweb-los-plugin</repo>
     <issue>https://github.com/cobweb-eu/cobweb-los-plugin/issues</issue>
-    <js-module src="www/COBWEBSensorPlugin.js" name="CoolPlugin">
+    <js-module src="www/COBWEBSensorPlugin.js" name="COBWEBSensorPlugin">
         <clobbers target="COBWEBSensorPlugin" />
     </js-module>
 
