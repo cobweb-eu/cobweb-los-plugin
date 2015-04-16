@@ -1,0 +1,30 @@
+{
+  "name": "cobweb-los-plugin",
+  "version": "0.0.1",
+  "description": "Cordova los Plugin",
+  "cordova": {
+    "id": "cordova-camera-los",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cobweb-eu/cobweb-los-plugin.git"
+  },
+  "keywords": [
+    "cordova",
+    "camera",
+    "Line of Sight",
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.1.0"
+    }
+  ],
+  "author": "Conor Muldoon",
+  "license": "Apache 2.0"
+}
